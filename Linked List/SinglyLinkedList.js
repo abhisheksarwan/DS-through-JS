@@ -174,7 +174,7 @@ class singlyLinkedList {
 var list = new singlyLinkedList();
 
 /* ==================
-        BIG OH
+        BIG O
    ==================
    Insertion - O(1)
    Removal - It depends O(1) or O(N)
