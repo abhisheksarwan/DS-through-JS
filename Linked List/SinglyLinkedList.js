@@ -142,9 +142,9 @@ class singlyLinkedList {
 
     //remove starts
     remove(index){
-        if(index < 0 || index > this.length) { return false; }
-        if( index === this.length) return this.pop();
-        if( index === 0 ) return this.shift(val);
+        if(index < 0 || index >= this.length) { return false; }
+        if( index === this.length - 1) return this.pop();
+        if( index === 0 ) return this.shift();
         var previousNode = this.get(index - 1);
         var removed = previousNode.next;
         previousNode.next = removed.next;
@@ -174,7 +174,7 @@ class singlyLinkedList {
 var list = new singlyLinkedList();
 
 /* ==================
-        BIG O
+        BIG OH
    ==================
    Insertion - O(1)
    Removal - It depends O(1) or O(N)
