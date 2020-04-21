@@ -15,6 +15,7 @@ function dequeue(){
         queue[i] = queue[i+1];
     }
     queue.length--;
+    index--;
 }
 }
 
