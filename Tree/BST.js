@@ -98,7 +98,6 @@ class BST {
         return treeData;
     }
 
-    //DFS PreOrder-Iterative
     DFSPreI(){
         var treeData = [];
         var stack = [];
